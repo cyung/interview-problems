@@ -1,0 +1,3 @@
+You are given a list of stock prices of the previous day where each index is the number of minutes past the opening time.
+
+Write a function that takes stock_prices and returns the highest profit from exactly 1 purchase and 1 sale.
