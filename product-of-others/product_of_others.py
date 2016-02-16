@@ -5,10 +5,13 @@ def product_of_others(num_list):
   current_product_before = 1
   current_product_after = 1
 
+  # generate list of all products before index i
   for num in num_list:
     products_before_index.append(current_product_before)
     current_product_before *= num
 
+  # don't need to save list of products after index i
+  # because it can be used immediately for calculating
   i = len(num_list) - 1
   while i >= 0:
     products_except_at_index[i] = products_before_index[i] * current_product_after
