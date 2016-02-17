@@ -4,9 +4,8 @@ Write a function that takes stock_prices and returns the highest profit from exa
 
 Example:
 stock_prices = [8,3,5,11,5,2,8]
-get_max_profit(stock_prices) // outputs 8
+get_max_profit(stock_prices) // outputs 8 (buy at 3, sell at 11)
 
 Requirements:
 O(n) time
 O(1) space
-

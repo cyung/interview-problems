@@ -1,0 +1,9 @@
+Given a list of integers, find the largest product possible from 3 integers.
+
+Example:
+num_list = [-7, -2, 3, 10, 3]
+largest_product(num_list) // outputs 140 (-7*-2*10)
+
+Requirements:
+O(n) time
+O(1) space
