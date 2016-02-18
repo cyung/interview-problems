@@ -3,8 +3,8 @@ You are given a list of stock prices of the previous day where each index is the
 Write a function that takes stock_prices and returns the highest profit from exactly 1 purchase and 1 sale.
 
 Example:
-stock_prices = [8,3,5,11,5,2,8]
-get_max_profit(stock_prices) // outputs 8 (buy at 3, sell at 11)
+  input: [8,3,5,11,5,2,8]
+  output: 8 (buy at 3, sell at 11)
 
 Requirements:
 O(n) time
