@@ -14,6 +14,7 @@ public class ProductOfOthers {
 
     int currentProductBefore = 1;
 
+    // Generate array of product of numbers before index i
     for (int i=0; i<numList.length; i++) {
       productsBeforeIndex[i] = currentProductBefore;
       currentProductBefore *= numList[i];
@@ -21,6 +22,10 @@ public class ProductOfOthers {
 
     int currentProductAfter = 1;
 
+    // for each index, multiply the product before the current index
+    // times the product after the index
+    // Keep track of currentProductAfter to avoid having to create
+    // another array for storing productsAfterIndex
     for (int i=numList.length-1; i>=0; i--) {
       productsExceptAtIndex[i] = productsBeforeIndex[i] * currentProductAfter;
       currentProductAfter *= numList[i];
