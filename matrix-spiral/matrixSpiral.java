@@ -29,7 +29,7 @@ public class MatrixSpiral {
     int y = 0;
     ArrayList<Integer> spiral = new ArrayList<Integer>();
     
-    while (true) {
+    while (m>0 && n>0) {
       // if there is only one row remaining, add and return
       if (m==1) {
         for (int i=0; i<n; i++) {
@@ -71,6 +71,8 @@ public class MatrixSpiral {
       m -= 2;
       n -= 2;
     }
+    
+    return spiral;
   }
 
 }
